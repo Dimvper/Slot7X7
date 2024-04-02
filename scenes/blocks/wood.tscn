@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://bl2p3hl5kh051"]
+
+[ext_resource type="Texture2D" uid="uid://dtva8eggu0qom" path="res://assets/W_Idle.png" id="1_0cyaf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5lerk"]
+atlas = ExtResource("1_0cyaf")
+region = Rect2(32, 50, 60, 60)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ny4fs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5lerk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Wood" type="Node2D"]
+position = Vector2(32, 32)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(1.06667, 1.06667)
+sprite_frames = SubResource("SpriteFrames_ny4fs")

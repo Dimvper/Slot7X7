@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://bx72x7w5eead5"]
+
+[ext_resource type="Texture2D" uid="uid://da2ctkiuh531e" path="res://assets/HappySheep_Idle.png" id="1_ofmb3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ggda7"]
+atlas = ExtResource("1_ofmb3")
+region = Rect2(36, 36, 60, 60)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ny4fs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ggda7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Sheep" type="Node2D"]
+position = Vector2(32, 32)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(1.06667, 1.06667)
+sprite_frames = SubResource("SpriteFrames_ny4fs")

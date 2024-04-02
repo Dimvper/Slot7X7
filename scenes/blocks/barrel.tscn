@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://cvgck6etkauos"]
+
+[ext_resource type="Texture2D" uid="uid://kt07hb6hosat" path="res://assets/Barrel_Purple.png" id="1_aqifq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ysrmq"]
+atlas = ExtResource("1_aqifq")
+region = Rect2(15, 15, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ny4fs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ysrmq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Barrel" type="Node2D"]
+position = Vector2(32, 32)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(4.76837e-07, 0)
+scale = Vector2(0.626667, 0.64)
+sprite_frames = SubResource("SpriteFrames_ny4fs")

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpb8dosbwjcqx"]
+
+[ext_resource type="Texture2D" uid="uid://cjxjef807feam" path="res://assets/OldTemple001.png" id="1_r673i"]
+
+[node name="Background" type="Node2D"]
+
+[node name="OldTemple001" type="Sprite2D" parent="."]
+position = Vector2(577.25, 325.25)
+scale = Vector2(0.287375, 0.2582)
+texture = ExtResource("1_r673i")

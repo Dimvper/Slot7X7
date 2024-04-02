@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://u1p8qxai5yw8"]
+
+[ext_resource type="Script" path="res://scripts/SlotGame.gd" id="1_qxwc4"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_wjtbm"]
+
+[node name="SlotGame" type="Container"]
+size_flags_horizontal = 0
+size_flags_vertical = 4
+script = ExtResource("1_qxwc4")
+
+[node name="GameCanvas" type="Node2D" parent="."]
+position = Vector2(232, 232)
+
+[node name="Border" type="Sprite2D" parent="GameCanvas"]
+modulate = Color(0.65098, 0.372549, 0, 1)
+scale = Vector2(470, 470)
+texture = SubResource("CanvasTexture_wjtbm")
+
+[node name="GameBg" type="Sprite2D" parent="GameCanvas"]
+modulate = Color(0.0509804, 0.0745098, 0.337255, 1)
+scale = Vector2(464, 464)
+texture = SubResource("CanvasTexture_wjtbm")

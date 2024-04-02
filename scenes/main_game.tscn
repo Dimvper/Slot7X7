@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bclwpad88xh1f"]
+
+[ext_resource type="PackedScene" uid="uid://cpb8dosbwjcqx" path="res://scenes/background.tscn" id="1_ndpvq"]
+[ext_resource type="PackedScene" uid="uid://u1p8qxai5yw8" path="res://scenes/SlotGame.tscn" id="2_unfhk"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("1_ndpvq")]
+
+[node name="SlotGame" parent="." instance=ExtResource("2_unfhk")]
+offset_left = 312.0
+offset_top = 120.0
+offset_right = 312.0
+offset_bottom = 120.0
+size_flags_vertical = 0
